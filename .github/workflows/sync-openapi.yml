@@ -35,11 +35,11 @@ jobs:
           exit 1 # prevents further steps from running
 
       - name: Checkout repository code
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
 
         # Check out a nested repository inside of previous checkout
       - name: Checkout rest-api-description repo
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
         with:
           # By default, only the most recent commit of the `main` branch
           # will be checked out
